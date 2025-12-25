@@ -35,7 +35,7 @@ Adding a New Metric (e.g., RAM Usage)
 C++ Side: Create a new function in dllmain.cpp inside the extern "C" block.
 C++
 __declspec(dllexport) float GetRamUsage() { 
-    return 15.5f; // Logic goes here
+    return 15.5f;
 }
 
 C# Side: Add the import line in MainWindow.xaml.cs.
