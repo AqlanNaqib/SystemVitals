@@ -17,3 +17,10 @@ BOOL APIENTRY DllMain( HMODULE hModule,
     return TRUE;
 }
 
+extern "C" {
+    // This tells the compiler: "Keep this name simple so C# can find it"
+    __declspec(dllexport) float GetCpuTemp() {
+        return 42.5f; // This is our test value
+    }
+}
+

@@ -6,7 +6,22 @@
         xmlns:local="clr-namespace:VitalsUI"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#2D2D2D">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="SYSTEM VITALS MONITOR" 
+                   Foreground="White" FontWeight="Bold" 
+                   FontSize="14" HorizontalAlignment="Center" Margin="0,0,0,20"/>
 
+            <TextBlock x:Name="TempDisplay" 
+                   Text="00.0°C" 
+                   Foreground="#00FF00" 
+                   FontSize="72" 
+                   FontFamily="Consolas" 
+                   HorizontalAlignment="Center"/>
+
+            <TextBlock Text="CPU TEMPERATURE" 
+                   Foreground="Gray" 
+                   FontSize="12" HorizontalAlignment="Center"/>
+        </StackPanel>
     </Grid>
 </Window>
